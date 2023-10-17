@@ -14,7 +14,7 @@ const HeaderMain = () => {
                 <p className="text-base font-semibold">{user.fullname}</p>
             </div>
             <button className="p-4 text-sm text-white bg-red-500 rounded-md">
-                Sign Out
+                SIGN OUT
             </button>
         </div>
     );
