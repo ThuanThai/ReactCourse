@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Switch from "./components/Switch";
+import React, { useState } from "react";
+
+function useToggle() {
+    const [on, setOn] = useState(false);
+    const handleToggle = () => {
+        setOn((prev) => !prev);
+    };
+
+    const getToggleProps = ({ onClick, ...props } = {}) => {
+        return {
+            onClick: () => {
+                onClick && onClick();
+                handleToggle();
+            },
+            ...props,
+        };
+    };
+
+    return { on, handleToggle, getToggleProps };
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const { on, getToggleProps } = useToggle();
+    return (
+        <div>
+            <Switch {...getToggleProps({ on })}></Switch>
+        </div>
+    );
 }
 
 export default App;
