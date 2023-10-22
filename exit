@@ -1,0 +1,17 @@
+[33mcommit 582cb7ef46951a8b1efb25acbf4e01093402e6c3[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: ThaiThuan <s3877024@rmit.edu.vn>
+Date:   Wed Oct 18 00:44:20 2023 +0700
+
+    New Commit
+
+[33mcommit 44dece0ab8ee2d362de3159f9dd186009df0d35b[m
+Author: ThaiThuan <s3877024@rmit.edu.vn>
+Date:   Wed Oct 18 00:12:36 2023 +0700
+
+    Initialize react course
+
+[33mcommit a5fc16097475e9070b5d171923389a136cb8b76d[m
+Author: Thai Thuan <s3877024@rmit.edu.vn>
+Date:   Sat Sep 23 02:02:32 2023 +0700
+
+    Initialize project using Create React App

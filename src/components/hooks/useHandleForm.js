@@ -6,7 +6,9 @@ export default function useHandleForm(init) {
         setValue({
             ...value,
             [e.target.name]:
-                e.target.type === "text" ? e.target.value : e.target.checked,
+                e.target.type !== "checkbox"
+                    ? e.target.value
+                    : e.target.checked,
         });
     };
 
