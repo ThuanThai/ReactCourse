@@ -14,26 +14,6 @@ function AppPortal() {
                 className="px-4 py-3 text-white bg-blue-400 rounded">
                 Show Modal
             </button>
-            {/* <CSSTransition
-                classNames={"zoom"}
-                in={show}
-                timeout={250}
-                unmountOnExit>
-                {(status) => {
-                    return (
-                        <Portal
-                            onClose={() => setShow(false)}
-                            visible={status !== "exited"}
-                            containerClassName={`fixed z-[999] inset-0 flex items-center justify-center`}
-                            bodyClassName={`p-5 max-w-[320px] w-full bg-white rounded z-[20] content`}
-                            bodyStyle={{ transition: "all 250ms" }}>
-                            <>
-                                <h2 className="text-center">WelcomeBack</h2>
-                            </>
-                        </Portal>
-                    );
-                }}
-            </CSSTransition> */}
             <ModalBase visible={show} onClose={() => setShow(false)}>
                 Welcome Back
             </ModalBase>
